@@ -58,12 +58,12 @@ function App() {
       <h1>My Notes App</h1>
       <input
         onChange={e => setFormData({ ...formData, 'name': e.target.value})}
-        placeholder="Enter Note name"
+        placeholder="Enter Notes name"
         value={formData.name}
       />
       <input
         onChange={e => setFormData({ ...formData, 'description': e.target.value})}
-        placeholder="Enter Note description"
+        placeholder="Enter Notes description"
         value={formData.description}
       />
       <button onClick={createNote}>Create Note</button>
